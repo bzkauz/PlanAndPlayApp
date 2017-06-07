@@ -26,6 +26,11 @@ namespace PlanAndPlayApp
                         Title = "Browse",
                         Icon = Device.OnPlatform("tab_feed.png",null,null)
                     },
+                    new NavigationPage(new VotePage())
+                    {
+                        Title = "Vote",
+                        Icon = Device.OnPlatform("tab_about.png",null,null)
+                    },
                     new NavigationPage(new AboutPage())
                     {
                         Title = "About",
