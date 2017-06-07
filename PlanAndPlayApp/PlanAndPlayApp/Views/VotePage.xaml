@@ -4,7 +4,32 @@
              x:Class="PlanAndPlayApp.Views.VotePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
+            <Label Text="Bitte beantworten Sie folgende mit Punkte Verteilung!" />
+      
+        
+            <!--<StackLayout.BindingContext>
+                --><!--<toolkit:ColorViewModel Color="Gray" />--><!--
+            </StackLayout.BindingContext>-->
+            <Label Text="1: Fitness"                                        HorizontalOptions="Center" />
+
+            <Slider Value="0.5" />
+
+            <Label Text="2: Team Feeling"                                   HorizontalOptions="Center" />
+
+            <Slider Value="0.5" />
+
+            <Label Text="3: Faires Spiel/ Training  gewesen"                HorizontalOptions="Center" />
+
+            <Slider Value="0.5" />
+
+            <Label Text="4: habe mich gut eingefühlt"                       HorizontalOptions="Center" />
+
+            <Slider Value="0.5" />
+
+            <Label Text="5: Schiedsrichter / Trainer war ok"                HorizontalOptions="Center" />
+
+            <Slider Value="0.5" />
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

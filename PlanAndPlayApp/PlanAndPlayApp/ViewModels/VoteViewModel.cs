@@ -17,5 +17,12 @@ namespace PlanAndPlayApp.ViewModels
         /// Command to open browser to xamarin.com
         /// </summary>
         public ICommand OpenWebCommand { get; }
+
+        int sliderHappy = 1;
+        public int SliederHappy
+        {
+            get { return sliderHappy; }
+            set { SetProperty(ref sliderHappy, value); }
+        }
     }
 }
