@@ -78,12 +78,9 @@ namespace PlanAndPlayApp.Services
             items = new List<Item>();
             var _items = new List<Item>
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Buy some cat food", Description="The cats are hungry"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Learn F#", Description="Seems like a functional idea"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Learn to play guitar", Description="Noted"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Buy some new candles", Description="Pine and cranberry for that winter feel"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Complete holiday shopping", Description="Keep it a secret!"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Finish a todo list", Description="Done"},
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Training Do 8.6.2017 10:00 - 12:00", Description="Sportanlage 8704 Herrliberg"},
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Freundschaftsspeil So 11.6.2017 14:00 ", Description="Ballwil Lu"},
+                new Item { Id = Guid.NewGuid().ToString(), Text = "FC Ballwil", Description="Liga C starker Gegner Punkte 17 Rang 2 gegenwärtig"},
             };
 
             foreach (Item item in _items)

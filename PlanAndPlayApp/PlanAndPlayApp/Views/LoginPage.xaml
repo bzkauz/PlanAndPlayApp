@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlanAndPlayApp.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" >
+            <Label >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="You must loggin!" />
+                            <Span Text=" "/>
+                            <Span FontSize="Large" />
+                            
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label />
+            <Label >
+                <Label.FormattedText>
+                <FormattedString>
+                        <FormattedString.Spans>
+                            <Span FontSize="Large" />
+                        <Span Text="Your Username" FontAttributes="Bold" />
+                       
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+            </Label>
+           
+
+            <Entry HeightRequest="30" WidthRequest="50" Text="{Binding Username, Mode=TwoWay}"> </Entry>
+            <Label />
+            <Label >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+
+                            <Span FontSize="Large" />
+                            <Span Text="Your Password" FontAttributes="Bold" />
+                          
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+
+            <Entry HeightRequest="30" WidthRequest="50" Text="{Binding h, Mode=TwoWay}"></Entry>
+            <Label />
+
+            <Button
+          Grid.Row="1"
+          Grid.Column="1"
+          Text="Sign In"/>
+            <!--Command="{Binding SignInCommand}"-->
+          <!--HorizontalOptions="FillAndExpand"-->
+          <!--IsEnabled="{Binding IsNotBusy}"-->
+          <!--TextColor="White"-->
+          <!--BackgroundColor="{StaticResource Primary}"-->
+                
+        </StackLayout>
+
+       
+    </ContentPage.Content>
+</ContentPage>

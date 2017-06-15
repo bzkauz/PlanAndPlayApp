@@ -23,13 +23,31 @@ namespace PlanAndPlayApp
                 {
                     new NavigationPage(new ItemsPage())
                     {
-                        Title = "Browse",
+                        Title = "Overview and Information",
                         Icon = Device.OnPlatform("tab_feed.png",null,null)
                     },
                     new NavigationPage(new VotePage())
                     {
                         Title = "Vote",
                         Icon = Device.OnPlatform("tab_about.png",null,null)
+                    },
+                    new NavigationPage(new DiaryPage())
+                    {
+                        Title = "Diary",
+                        Icon = Device.OnPlatform("tab_about.png",null,null)
+
+                    },
+                    new NavigationPage(new SettingPage())
+                    {
+                        Title = "Setting",
+                        Icon = Device.OnPlatform("tab_about.png",null,null)
+
+                    },
+                    new NavigationPage(new LoginPage())
+                    {
+                        Title = "Login",
+                        Icon = Device.OnPlatform("tab_about.png",null,null)
+
                     },
                     new NavigationPage(new AboutPage())
                     {

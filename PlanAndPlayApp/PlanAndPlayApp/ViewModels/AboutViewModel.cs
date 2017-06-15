@@ -8,14 +8,17 @@ namespace PlanAndPlayApp.ViewModels
     {
         public AboutViewModel()
         {
-            Title = "About";
+            Title = "About Kauz Informatik | Medien AG";
 
-            OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
+            OpenWebCommandAbout = new Command(() => Device.OpenUri(new Uri("http://www.kauz.ch/")));
+
+            OpenWebCommandPlanAndPlay = new Command(() => Device.OpenUri(new Uri("https://www.moneyhouse.ch/de/company/plan-play-ag-13984589621")));
         }
 
         /// <summary>
         /// Command to open browser to xamarin.com
         /// </summary>
-        public ICommand OpenWebCommand { get; }
+        public ICommand OpenWebCommandAbout { get; }
+        public ICommand OpenWebCommandPlanAndPlay { get; }
     }
 }

@@ -24,5 +24,41 @@ namespace PlanAndPlayApp.ViewModels
             get { return sliderHappy; }
             set { SetProperty(ref sliderHappy, value); }
         }
+
+        private double fitnessInterval = 0.5;
+        public double FitnessInterval
+        {
+            get { return fitnessInterval; }
+            set { SetProperty(ref fitnessInterval, value); }
+        }
+
+        private double feelingTeamInterval = 0.5;
+        public double FeelingTeamInterval
+        {
+            get { return feelingTeamInterval; }
+            set { SetProperty(ref feelingTeamInterval, value); }
+        }
+
+        private double fairplayInterval = 0.5;
+        public double FairplayInterval
+        {
+            get { return fairplayInterval; }
+            set { SetProperty(ref fairplayInterval, value); }
+        }
+
+        private double feelingPersonalInterval = 0.5;
+        public double FeelingPersonalInterval
+        {
+            get { return feelingTeamInterval; }
+            set { SetProperty(ref feelingTeamInterval, value); }
+        }
+
+        private double refereeOkInterval = 0.5;
+        public double RefereeOkInterval
+        {
+            get { return refereeOkInterval; }
+            set { SetProperty(ref refereeOkInterval, value); }
+        }
+
     }
 }

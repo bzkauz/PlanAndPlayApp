@@ -1,8 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PlanAndPlayApp.Views.VotePage">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"         
+             x:Class="PlanAndPlayApp.Views.VotePage"
+             xmlns:vm="clr-namespace:PlanAndPlayApp.ViewModels;">
+    <ContentPage.BindingContext>
+        <vm:VoteViewModel />
+    </ContentPage.BindingContext>
     <ContentPage.Content>
+      
         <StackLayout>
             <Label Text="Bitte beantworten Sie folgende mit Punkte Verteilung!" />
       
@@ -12,23 +17,23 @@
             </StackLayout.BindingContext>-->
             <Label Text="1: Fitness"                                        HorizontalOptions="Center" />
 
-            <Slider Value="0.5" />
+            <Slider Value="{Binding FitnessInterval,Mode=TwoWay}" />
 
             <Label Text="2: Team Feeling"                                   HorizontalOptions="Center" />
 
-            <Slider Value="0.5" />
+            <Slider Value="{Binding FeelingTeamInterval,Mode=TwoWay}" />
 
             <Label Text="3: Faires Spiel/ Training  gewesen"                HorizontalOptions="Center" />
 
-            <Slider Value="0.5" />
+            <Slider Value="{Binding FairplayInterval,Mode=TwoWay}" />
 
             <Label Text="4: habe mich gut eingefühlt"                       HorizontalOptions="Center" />
 
-            <Slider Value="0.5" />
+            <Slider Value="{Binding FeelingPersonalInterval,Mode=TwoWay}" />
 
             <Label Text="5: Schiedsrichter / Trainer war ok"                HorizontalOptions="Center" />
 
-            <Slider Value="0.5" />
+            <Slider Value="{Binding RefereeOkInterval,Mode=TwoWay}" />
             
         </StackLayout>
     </ContentPage.Content>
