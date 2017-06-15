@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -6,11 +7,17 @@ namespace PlanAndPlayApp.ViewModels
 {
     public class VoteViewModel : BaseViewModel
     {
+        public Command SaveCommand { get; set; }
         public VoteViewModel()
         {
             Title = "Vote";
-
+            SaveCommand = new Command(async () => await ExecuteSaveCommand());
             OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
+        }
+
+        private Task ExecuteSaveCommand()
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>

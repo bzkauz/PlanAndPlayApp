@@ -11,30 +11,38 @@ namespace PlanAndPlayApp
         public App()
         {
             InitializeComponent();
-
+            
             SetMainPage();
+            
         }
 
         public static void SetMainPage()
         {
             Current.MainPage = new TabbedPage
             {
+
                 Children =
                 {
                     new NavigationPage(new ItemsPage())
                     {
-                        Title = "Overview and Information",
-                        Icon = Device.OnPlatform("tab_feed.png",null,null)
-                    },
+                        Title = "Overview",
+                        Icon = Device.OnPlatform("tab_feed.png",null,null),
+                        BarBackgroundColor = Color.Gray,
+                        BackgroundColor = Color.Red
+        },
                     new NavigationPage(new VotePage())
                     {
                         Title = "Vote",
-                        Icon = Device.OnPlatform("tab_about.png",null,null)
-                    },
+                        Icon = Device.OnPlatform("tab_about.png",null,"pp_logo_notextOripng.png"),
+                        BarBackgroundColor = Color.White,
+                        BackgroundColor = Color.White
+        },
                     new NavigationPage(new DiaryPage())
                     {
                         Title = "Diary",
-                        Icon = Device.OnPlatform("tab_about.png",null,null)
+                        Icon = Device.OnPlatform("tab_about.png",null,null),
+                         BarBackgroundColor = Color.Blue,
+                        BackgroundColor = Color.White
 
                     },
                     new NavigationPage(new SettingPage())
@@ -46,7 +54,8 @@ namespace PlanAndPlayApp
                     new NavigationPage(new LoginPage())
                     {
                         Title = "Login",
-                        Icon = Device.OnPlatform("tab_about.png",null,null)
+                        Icon = Device.OnPlatform("tab_about.png",null,null),
+                         BarBackgroundColor = Color.Gray
 
                     },
                     new NavigationPage(new AboutPage())
@@ -56,6 +65,8 @@ namespace PlanAndPlayApp
                     },
                 }
             };
+            Current.MainPage.BackgroundColor = Color.Red;
+            
         }
     }
 }
