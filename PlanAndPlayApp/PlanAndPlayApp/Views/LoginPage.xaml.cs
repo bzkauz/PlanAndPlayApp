@@ -14,8 +14,7 @@ namespace PlanAndPlayApp.Views
     {
         public LoginPage()
         {
-            InitializeComponent();
-           
+           InitializeComponent();
         }
     }
 }

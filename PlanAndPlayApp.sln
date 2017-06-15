@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.12
+VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanAndPlayApp", "PlanAndPlayApp\PlanAndPlayApp\PlanAndPlayApp.csproj", "{E44FF349-638D-4037-9BC7-DD1F6DE58868}"
 EndProject

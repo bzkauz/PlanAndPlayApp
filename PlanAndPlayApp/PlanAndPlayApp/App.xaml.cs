@@ -65,7 +65,7 @@ namespace PlanAndPlayApp
                     },
                 }
             };
-            Current.MainPage.BackgroundColor = Color.Red;
+            
             
         }
     }
