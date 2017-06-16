@@ -9,6 +9,7 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center">
+           
             <Label Text="Your setting:" />
 
             <Label Text="Ihr Username"/>
