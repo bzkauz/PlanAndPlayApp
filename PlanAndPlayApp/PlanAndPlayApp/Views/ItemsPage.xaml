@@ -2,12 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PlanAndPlayApp"
+             xmlns:localHelp="clr-namespace:PlanAndPlayApp.Helpers"
              x:Class="PlanAndPlayApp.Views.ItemsPage"
               Title="{Binding Title}"
              x:Name="BrowseItemsPage">
-   
-        
+
     
+    <ContentPage.Icon>
+        <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="planplay.png"
+                                Android="planplay.png"
+                                WinPhone="Images/PlanPlayImg.png" />
+    </ContentPage.Icon>
     <ContentPage.ToolbarItems x:Uid="ToolbarUID">
       
         <!--<ToolbarItem Icon="PlanPlayImg.png" Text="Logo"/>-->
@@ -18,8 +24,16 @@
   <ContentPage.Content>
     <StackLayout>
 
-            <Image Source="PlanPlayImg.png" WidthRequest="200" HeightRequest="50"/>
-      
+            <!--<Image Source="{localHelp:ImageResource PlanAndPlayApp.PlanPlayImg.png}"
+               VerticalOptions="Center" HeightRequest="64"
+               BackgroundColor="Aqua"
+               SizeChanged="OnImageSizeChanged" />-->
+            <Image VerticalOptions="StartAndExpand" HeightRequest="63" MinimumWidthRequest="200">
+                <Image.Source>
+                    <OnPlatform x:TypeArguments="ImageSource" iOS="planplayOri.png" Android="planplay.png" WinPhone="PlanPlayImg.png" />
+            </Image.Source>
+            </Image>
+        
             <ListView x:Name="ItemsListView"
 				ItemsSource="{Binding Items}"
                 VerticalOptions="FillAndExpand"

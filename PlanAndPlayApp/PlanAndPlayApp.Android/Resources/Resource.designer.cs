@@ -2191,14 +2191,20 @@ namespace PlanAndPlayApp.Droid
 			// aapt resource value: 0x7f02009e
 			public const int mr_ic_play_light = 2130837662;
 			
-			// aapt resource value: 0x7f0200a1
-			public const int notification_template_icon_bg = 2130837665;
+			// aapt resource value: 0x7f0200a3
+			public const int notification_template_icon_bg = 2130837667;
 			
 			// aapt resource value: 0x7f02009f
-			public const int profile_generic = 2130837663;
+			public const int planplay = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int slideout = 2130837664;
+			public const int planplay_img = 2130837664;
+			
+			// aapt resource value: 0x7f0200a1
+			public const int profile_generic = 2130837665;
+			
+			// aapt resource value: 0x7f0200a2
+			public const int slideout = 2130837666;
 			
 			static Drawable()
 			{

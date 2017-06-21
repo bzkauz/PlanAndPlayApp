@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Xamarin.Forms.Xaml;
 using PlanAndPlayApp.Models;
 using PlanAndPlayApp.ViewModels;
 
@@ -7,9 +7,12 @@ using Xamarin.Forms;
 
 namespace PlanAndPlayApp.Views
 {
+    [ContentProperty("Source")]
     public partial class ItemsPage : ContentPage
     {
         ItemsViewModel viewModel;
+
+        public string Source { get; set; }
 
         public ItemsPage()
         {
@@ -43,6 +46,12 @@ namespace PlanAndPlayApp.Views
 
             if (viewModel.Items.Count == 0)
                 viewModel.LoadItemsCommand.Execute(null);
+        }
+
+        void OnImageSizeChanged(object sender, EventArgs args)
+        {
+            Image image = (Image)sender;
+         
         }
     }
 }

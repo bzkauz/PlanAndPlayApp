@@ -40,5 +40,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>XSLaunchImageAssets</key>
+	<string>Resources/Medien.xcassets/Startbilder.launchimage</string>
+	<key>XSAppIconAssets</key>
+	<string>Resources/Medien.xcassets/App-Symbole.appiconset</string>
 </dict>
 </plist>

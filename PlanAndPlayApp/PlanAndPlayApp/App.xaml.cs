@@ -54,7 +54,7 @@ namespace PlanAndPlayApp
                     new NavigationPage(new LoginPage())
                     {
                         Title = "Login",
-                        Icon = Device.OnPlatform("tab_about.png",null,null),
+                        Icon = Device.OnPlatform("profile_generic.png","profile_generic.png","profile_generic.png"),
                          BarBackgroundColor = Color.Gray
 
                     },

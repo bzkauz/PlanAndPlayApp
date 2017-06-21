@@ -22,7 +22,16 @@
             <Label></Label>
             <Label Text="Message Push" HorizontalOptions="Center" />
             <Switch  HorizontalOptions="Center" IsToggled="{Binding UsedPush, Mode=TwoWay}"></Switch>
-        </StackLayout>
+            <Label></Label>
+            <Label Text="Vereine"></Label>
+            <Picker >
+                <Picker.Items>
+                    <x:String>FC Herrliberg</x:String>
+                    <x:String>FC Ballwil</x:String>
+                    <x:String>GC Zürich</x:String>
+                </Picker.Items>
+            </Picker>
+            </StackLayout>
     </ContentPage.Content>
 </ContentPage>
 <!--<ContentPage.BindingContext>

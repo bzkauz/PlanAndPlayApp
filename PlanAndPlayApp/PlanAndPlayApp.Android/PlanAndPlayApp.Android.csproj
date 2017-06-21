@@ -49,6 +49,7 @@
     <Reference Include="FormsViewGroup, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.4.247\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -123,12 +124,30 @@
     <AndroidResource Include="Resources\values\strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\drawable-hdpi\PlanPlayImg.png" />
-    <Content Include="Resources\drawable-mdpi\PlanPlayImg.png" />
-    <Content Include="Resources\drawable-xhdpi\PlanPlayImg.png" />
-    <Content Include="Resources\drawable-xxhdpi\PlanPlayImg.png" />
-    <Content Include="Resources\drawable-xxxhdpi\PlanPlayImg.png" />
-    <Content Include="Resources\drawable\PlanPlayImg.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\planplay_img.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\planplay_img.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\planplay_img.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\planplay_img.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\planplay_img.png" />
+    <AndroidResource Include="Resources\drawable\planplay_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\planplay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\planplay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\planplay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\planplay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\planplay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\planplay.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
