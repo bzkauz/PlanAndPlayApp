@@ -82,7 +82,7 @@
     <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
     <MtouchDebug>true</MtouchDebug>
     <MtouchFastDev>true</MtouchFastDev>
@@ -132,10 +132,12 @@
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Bundle %28Public%29.crt" />
+    <None Include="Bundle.pfx" />
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="Kevin Gut %28Key%29.key" />
     <None Include="packages.config" />
-    <None Include="TestAkkountIOS.developerprofile" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
