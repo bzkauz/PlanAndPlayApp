@@ -132,11 +132,8 @@
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Bundle %28Public%29.crt" />
-    <None Include="Bundle.pfx" />
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
-    <None Include="Kevin Gut %28Key%29.key" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
