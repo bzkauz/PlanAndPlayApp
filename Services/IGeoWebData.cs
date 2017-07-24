@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PlanAndPlayApp.Services
+namespace Services
 {
     public interface IWebData
     {

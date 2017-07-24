@@ -1,4 +1,4 @@
-﻿using PlanAndPlayApp.Models;
+﻿using Models;
 
 namespace PlanAndPlayApp.ViewModels
 {

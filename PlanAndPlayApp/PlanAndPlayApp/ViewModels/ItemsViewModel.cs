@@ -2,8 +2,8 @@
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-using PlanAndPlayApp.Helpers;
-using PlanAndPlayApp.Models;
+using Helpers;
+using Models;
 using PlanAndPlayApp.Views;
 
 using Xamarin.Forms;

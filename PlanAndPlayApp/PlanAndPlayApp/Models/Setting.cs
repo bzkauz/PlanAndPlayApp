@@ -1,4 +1,4 @@
-﻿using PlanAndPlayApp.Helpers;
+﻿using Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PlanAndPlayApp.Models
 {
-    public class Setting :  ObservableObject
+    public class Setting 
     {
     }
 }

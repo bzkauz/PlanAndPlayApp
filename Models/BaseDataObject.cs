@@ -1,9 +1,9 @@
 ﻿using System;
 using Helpers;
 
-namespace PlanAndPlayApp.Models
+namespace Models
 {
-    public class BaseDataObject : Helpers.ObservableObject
+    public class BaseDataObject : ObservableObject
     {
         public BaseDataObject()
         {

@@ -1,6 +1,6 @@
-﻿using PlanAndPlayApp.Helpers;
-using PlanAndPlayApp.Models;
-using PlanAndPlayApp.Services;
+﻿using Helpers;
+using Models;
+using Services;
 
 using Xamarin.Forms;
 

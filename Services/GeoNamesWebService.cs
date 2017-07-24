@@ -4,7 +4,7 @@ using System.Net;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
 
-namespace PlanAndPlayApp.Services
+namespace Services
 {
     public class WebService : IWebData
     {

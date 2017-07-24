@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Models;
 
-namespace PlanAndPlayApp.Services
+namespace Services
 {
     public class Login : ILogin
     {

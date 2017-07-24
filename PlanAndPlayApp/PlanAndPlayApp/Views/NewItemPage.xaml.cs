@@ -1,6 +1,6 @@
 ﻿using System;
 
-using PlanAndPlayApp.Models;
+using Models;
 
 using Xamarin.Forms;
 

@@ -7,8 +7,8 @@ using Models;
 
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(PlanAndPlayApp.Services.MockDataStore))]
-namespace PlanAndPlayApp.Services
+[assembly: Dependency(typeof(Services.MockDataStore))]
+namespace Services
 {
     public class MockDataStore : IDataStore<Item>
     {

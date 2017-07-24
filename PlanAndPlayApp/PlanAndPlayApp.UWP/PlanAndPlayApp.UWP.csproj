@@ -182,6 +182,10 @@
     </SDKReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Helpers\Helpers.csproj">
+      <Project>{7e13f6fc-0589-4f77-95f3-7f9046027b2b}</Project>
+      <Name>Helpers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PlanAndPlayApp\PlanAndPlayApp.csproj">
       <Project>{fc5e8580-58b2-4b32-9379-ba9e972e3947}</Project>
       <Name>PlanAndPlayApp</Name>

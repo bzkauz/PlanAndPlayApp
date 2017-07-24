@@ -7,8 +7,9 @@ using Models;
 
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(PlanAndPlayApp.Services.VoteDataStore))]
-namespace PlanAndPlayApp.Services
+
+[assembly: Dependency(typeof(Services.VoteDataStore))]
+namespace Services
 {
     public class VoteDataStore : IVoteStore<VoteItem>
     {

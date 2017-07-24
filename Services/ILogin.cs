@@ -1,7 +1,7 @@
 ﻿using Models;
 using System.Threading.Tasks;
 
-namespace PlanAndPlayApp.Services
+namespace Services
 {
     public interface ILogin
     {
