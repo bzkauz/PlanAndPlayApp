@@ -5,11 +5,11 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace ViewModels
+namespace ViewModelEstensions
 {
-    public class ViewModels : ContentPage
+    public class ViewModelEstensions : ContentPage
     {
-        public ViewModels()
+        public ViewModelEstensions()
         {
             var button = new Button
             {

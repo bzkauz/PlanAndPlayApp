@@ -1,4 +1,4 @@
-﻿using Models;
+﻿using Models;  
 using System;
 using System.Net;
 using Newtonsoft.Json;
@@ -8,6 +8,7 @@ namespace Services
 {
     public class WebService : IWebData
     {
+        public WebService() { }
         public async Task<Earthquake[]> GetEarthquakesAsync()
         {
 
@@ -28,7 +29,9 @@ namespace Services
         public Task<Object> GetPlanAndPlayt()
         {
             var client = new System.Net.Http.HttpClient();
-            //var response = await client.GetStringAsync("earthquakesJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&username=bertt&maxRows=20");
+
+            client.BaseAddress = new Uri("http://blick.ch/");
+            
             //var earthquakesJson = response.Content.ReadAsStringAsync().Result;
 
             //var rootobject = JsonConvert.DeserializeObject<RootobjectE>(earthquakesJson);

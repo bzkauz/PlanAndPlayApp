@@ -8,10 +8,14 @@ namespace Models
 {
     public class LoginData
     {
-
         public string Url { get; set; }
         public string Token { get; set; }
         public string PWD { get; set; }
         public string UserName { get; set; }
+    }
+
+    public class RootobjectLoging
+    {
+        public LoginData[] LoginDataObjects { get; set; }
     }
 }

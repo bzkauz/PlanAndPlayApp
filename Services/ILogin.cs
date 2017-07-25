@@ -3,8 +3,9 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public interface ILogin
+    public interface ILogin<T>
     {
-        Task<LoginData[]> GetLoginData();
+        Task<LoginData[]> GetLoginDataAsync();
+        void SendAsync(string UriAdresse);
     }
 }

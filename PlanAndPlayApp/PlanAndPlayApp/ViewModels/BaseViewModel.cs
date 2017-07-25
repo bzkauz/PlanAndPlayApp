@@ -13,7 +13,12 @@ namespace PlanAndPlayApp.ViewModels
         /// </summary>
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
 
+        public ILogin<LoginData> DataLogin => DependencyService.Get<ILogin<LoginData>>();
+
+        public IVoteStore<VoteItem> DataVote => DependencyService.Get<IVoteStore<VoteItem>>();
+
         bool isBusy = false;
+
         public bool IsBusy
         {
             get { return isBusy; }
