@@ -9,6 +9,7 @@ using System.Net;
 using Xamarin.Forms;
 using System.Net.Http;
 using Newtonsoft.Json;
+using System.Diagnostics;
 
 [assembly: Dependency(typeof(Services.Login))]
 namespace Services
@@ -37,10 +38,10 @@ namespace Services
             return rootobject.LoginDataObjects;
         }
 
-        public Login()
+        public Login(string baseAdress)
         {
             client = new HttpClient();
-            client.BaseAddress = new Uri("http://api.geonames.org/");
+            client.BaseAddress = new Uri(baseAdress);
             client.MaxResponseContentBufferSize = 256000;
         }
 
@@ -77,6 +78,67 @@ namespace Services
                                                                         request.EndGetResponse,
                                                                         null);
             return response.GetResponseStream();
+        }
+
+
+        private const string Url = "http://www.nactem.ac.uk/software/acromine/dictionary.py?sf={0}";
+        public async Task<List<REQ>> GetResult(string SearchString,string url)
+        {
+            try
+            {
+                var client = new HttpClient();
+                var json = await client.GetStringAsync(string.Format(url, SearchString));
+                return JsonConvert.DeserializeObject<List<REQ>>(json.ToString());
+            }
+            catch (System.Exception exception)
+            {
+                return null;
+            }
+        }
+
+        public async Task SaveTodoItemAsync (REQ item, bool isNewItem = false)
+		{
+			// RestUrl = http://developer.xamarin.com:8081/  api/todoitems
+			var uri = new Uri (string.Format (Constants.RestUrl, string.Empty));
+
+			try {
+				var json = JsonConvert.SerializeObject (item);
+				var content = new StringContent (json, Encoding.UTF8, "application/json");
+
+				HttpResponseMessage response = null;
+				if (isNewItem) {
+					response = await client.PostAsync (uri, content);
+				} else {
+					response = await client.PutAsync (uri, content);
+				}
+				
+				if (response.IsSuccessStatusCode) {
+					Debug.WriteLine (@"				TodoItem successfully saved.");
+				}
+				
+			} catch (Exception ex) {
+				Debug.WriteLine (@"				ERROR {0}", ex.Message);
+			}
+		}
+        public void Disscus()
+        {
+            var httpClient = new HttpClient();
+            //HttpContent content = new StringContent(JsonConvert.SerializeObject(toPost), Encoding.UTF8, WebConstants.ContentTypeJson);
+
+            //if (!Equals(headers, null))
+            //{
+            //    foreach (var header in headers)
+            //    {
+            //        content.Headers.Add(header.Key, header.Value);
+            //    }
+            //}
+
+            //var response = await httpClient.PostAsync(new Uri(url), content, ct);
+
+            //if (response.IsSuccessStatusCode)
+            //{
+            //    return await response.Content.ReadAsStringAsync();
+            //}
         }
     }
 }

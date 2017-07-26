@@ -16,7 +16,7 @@ namespace UnitTestAndroid
         [SetUp]
         public void Setup()
         {
-           DataLogin = new Login();
+           DataLogin = new Login("");
            webServ = new WebService();
         }
 
@@ -25,8 +25,9 @@ namespace UnitTestAndroid
         public void Tear() { }
 
         [Test]
-        public void Pass()
+        public async void Pass()
         {
+            var date = await DataLogin.GetLoginDataAsync();
             //loginTest.SendAsync("http://blick.ch");
             Console.WriteLine("test1");
             Assert.True(true);

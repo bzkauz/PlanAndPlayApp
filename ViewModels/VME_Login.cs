@@ -1,4 +1,5 @@
 ﻿using Models;
+using Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +12,13 @@ namespace ViewModelsExtensions
     {
         private LoginData loginDat;
         string firsttimeToken = string.Empty;
+        private ILogin<REQ> req;
         public VME_Login(string Device, string name)
         {
             loginDat = new LoginData();
             loginDat.Name = name;
             loginDat.Device = Device;
+            
         }
 
        
