@@ -13,9 +13,11 @@ namespace PlanAndPlayApp.ViewModels
     {
         public LoginViewModel()
         {
-           // SaveCommand = new Command(SendLogin);
+            // SaveCommand = new Command(SendLogin);
+            OpenQRCode = new Command(() => Device.OpenUri(new Uri("https://pp.ayra.ch/de")));
         }
 
+        public ICommand OpenQRCode { get; }
         void SendLogin()
         {
             //throw new NotImplementedException();

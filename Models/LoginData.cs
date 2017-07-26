@@ -12,6 +12,10 @@ namespace Models
         public string Token { get; set; }
         public string PWD { get; set; }
         public string UserName { get; set; }
+        public string Name { get; set; }
+        public string Device { get; set; }
+        public bool success { get; set; }
+        public string message { get; set; }
     }
 
     public class RootobjectLoging

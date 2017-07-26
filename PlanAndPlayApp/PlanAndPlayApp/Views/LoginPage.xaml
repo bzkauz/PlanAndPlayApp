@@ -22,7 +22,9 @@
                 <Label />
             <Button Text="Bestätigen" HeightRequest="50" WidthRequest="150" Command="SaveComand"></Button>
 
-            
+            <Button Text="QR Code" HeightRequest="50" WidthRequest="150" Command="{Binding OpenQRCode}"></Button>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

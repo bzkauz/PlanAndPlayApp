@@ -7,5 +7,6 @@ namespace Services
     {
         Task<LoginData[]> GetLoginDataAsync();
         void SendAsync(string UriAdresse);
+        
     }
 }
