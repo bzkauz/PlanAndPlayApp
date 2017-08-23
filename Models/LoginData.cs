@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Models
+﻿namespace Models
 {
     public class LoginData
     {
@@ -65,7 +59,7 @@ namespace Models
         public static string name = "asdf";
 
     }
-
+    /*First step*/
     public class REQ
     {
         public string device { get; set; }
