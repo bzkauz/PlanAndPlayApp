@@ -11,13 +11,14 @@ using Xamarin.Forms.Xaml;
 namespace PlanAndPlayApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SettingPage : ContentPage
+    public partial class RegisterPage : ContentPage
     {
-        private SettingViewModel vm;
-        public SettingPage()
+        RegisterViewModel vm;
+        public RegisterPage()
         {
-           InitializeComponent();
-            vm = new SettingViewModel(this.Navigation);
+            
+            InitializeComponent();
+            vm = new RegisterViewModel(this.Navigation);
             BindingContext = vm;
         }
     }

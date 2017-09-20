@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlanAndPlayApp.Views.RegisterPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Registration your Plan and Play Account here!" />
+            <!--<Button Test ="Back" Command="{Binding CmdBack}"></Button>-->
+            <WebView x:Name="webView"
+                 VerticalOptions="FillAndExpand"
+                 Source="https://pp.ayra.ch/de" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -4,9 +4,9 @@
              x:Class="PlanAndPlayApp.Views.SettingPage"
              xmlns:vm="clr-namespace:PlanAndPlayApp.ViewModels;"
              Title="{Binding Title} ">
-    <ContentPage.BindingContext>
+    <!--<ContentPage.BindingContext>
         <vm:SettingViewModel />
-    </ContentPage.BindingContext>
+    </ContentPage.BindingContext>-->
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Your setting:" />
@@ -31,6 +31,7 @@
                     <x:String>GC Zürich</x:String>
                 </Picker.Items>
             </Picker>
+            <Button Text="Registeration" Command="{Binding CmdRegister}"></Button>
             </StackLayout>
     </ContentPage.Content>
 </ContentPage>
