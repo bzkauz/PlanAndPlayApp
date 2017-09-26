@@ -6,8 +6,6 @@
 	<string>PlanAndPlayApp.iOS</string>
 	<key>CFBundleName</key>
 	<string>PlanAndPlayApp.iOS</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.companyname.PlanAndPlayApp.test</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>

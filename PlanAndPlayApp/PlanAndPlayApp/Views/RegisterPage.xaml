@@ -8,7 +8,7 @@
             <!--<Button Test ="Back" Command="{Binding CmdBack}"></Button>-->
             <WebView x:Name="webView"
                  VerticalOptions="FillAndExpand"
-                 Source="https://pp.ayra.ch/de" />
+                 Source="https://pp.ayra.ch" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
