@@ -145,6 +145,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Database_WinPhone.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -182,6 +183,10 @@
     </SDKReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Data\Data.csproj">
+      <Project>{c7a44b37-1207-4a43-992d-9d611ddde72f}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Helpers\Helpers.csproj">
       <Project>{7e13f6fc-0589-4f77-95f3-7f9046027b2b}</Project>
       <Name>Helpers</Name>
@@ -190,6 +195,9 @@
       <Project>{fc5e8580-58b2-4b32-9379-ba9e972e3947}</Project>
       <Name>PlanAndPlayApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SQLite\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

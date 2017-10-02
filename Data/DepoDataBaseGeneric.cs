@@ -17,9 +17,11 @@ namespace Data
 
         public DepoDataBaseGeneric()
         {
-            database = DependencyService.Get<IDatabase>().DBConnect();
+            database = DependencyService.Get<IDatabase>().DBConnect;
+
             database.CreateTable<Item>();
             database.CreateTable<VoteItem>();
+            database.CreateTable<LoginData>();
         }
 
         public IEnumerable<T> GetObjects<T>() where T : IObject, new()

@@ -5,7 +5,8 @@ namespace Data
 {
     public interface IDatabase
     {
-       
-        SQLiteConnection DBConnect();
+        SQLiteConnection DBConnect { get; }
+
+        string GetLocalFilePath(string filename);
     }
 }
